@@ -19,6 +19,21 @@ In this scenario, access to restricted content is controlled via IP address. The
 
 Description: Open the file that contains the allow list
 
+First, I opened the **“allow_list.txt” **file and assigned the file name as a string to the **import_file** variable. I also created the list **remove_list** with a list of IP addresses that should not be authorized to access the restricted information:
+
+![image](https://github.com/user-attachments/assets/daaf449e-dbb2-40f7-95ab-d7e8cfbf6251)
+
+_Ref 1: Creating allow_list and remove_list_
+
+Next, I used a with statement to open the file:
+
+![image](https://github.com/user-attachments/assets/c4a9413a-abf1-412e-84ca-1946442082b6)
+
+_Ref 2: Opening the file using a with statement._
+
+In order to access the IP addresses stored in the allow file, I need to first open the file. The **with** keyword manages resources by closing the file after exiting the with statement. The **open()** function in this code has two parameters: first, identifying the file to import (in this case, **import_file**); the second, what I want to do with this file (in this case, **“r”**, meaning read). I’ve also used the **as** keyword to assign a variable named **file** to store the output of the **.open()** function. 
+
+
 ### Step Two
 
 Description: Read the file contents
