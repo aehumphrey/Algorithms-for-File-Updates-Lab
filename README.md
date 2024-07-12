@@ -19,7 +19,7 @@ In this scenario, access to restricted content is controlled via IP address. The
 
 Description: Open the file that contains the allow list
 
-First, I opened the **“allow_list.txt” **file and assigned the file name as a string to the **import_file** variable. I also created the list **remove_list** with a list of IP addresses that should not be authorized to access the restricted information:
+First, I opened the **“allow_list.txt”** file and assigned the file name as a string to the **import_file** variable. I also created the list **remove_list** with a list of IP addresses that should not be authorized to access the restricted information:
 
 ![image](https://github.com/user-attachments/assets/daaf449e-dbb2-40f7-95ab-d7e8cfbf6251)
 
