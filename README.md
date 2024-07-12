@@ -2,7 +2,7 @@
 
 ## Objective
 
-The goal of the Vulnerability Assessment Report project is comprehensively identify and evaluate potential security weaknesses within an organization.By conducting a systematic analysis of network configurations, software systems, and operational practices, the assessment aims to uncover vulnerabilities that could be exploited by malicious actors. NIST SP 800-30 Rev. 1 is used to guide the risk analysis of the information system.
+In this scenario, access to restricted content is controlled via IP address. The “allow_list.txt” file contains these IP addresses. A separate remove list identifies IP addresses that should no longer have authorization. I created an algorithm in Python to automate updating the “allow_list.txt file.”
 
 ### Skills Learned
 
