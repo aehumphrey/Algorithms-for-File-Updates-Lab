@@ -38,6 +38,21 @@ In order to access the IP addresses stored in the allow file, I need to first op
 
 Description: Read the file contents
 
+When using an **.open()** function that includes the argument **”r”,** I can call the **.read()** function in the body of the **with** statement. This converts the file into a string format, allowing me to read it and, later, to use the string to organize and extract data. I assigned the string output of **file.read()** to the variable **ip_addresses**:
+
+![image](https://github.com/user-attachments/assets/d9b9648e-2028-46a5-8852-0dc19231598a)
+
+_Ref 3. Using the file.read() function to read a .txt file_
+
+Below is the output of the function:
+
+![image](https://github.com/user-attachments/assets/c4cf6ecb-e3a1-4b27-b41d-dd093db61c14)
+
+_Ref 4. Output of file.read()_
+
+
+
+
 ### Step Three
 
 Description: Convert the string into a list
