@@ -50,12 +50,23 @@ Below is the output of the function:
 
 _Ref 4. Output of file.read()_
 
-
-
-
 ### Step Three
 
 Description: Convert the string into a list
+
+In order to remove IP addresses from the list, I need to convert the string into a list. I used **.split()** to convert **ip_addresses** into a list:
+
+![image](https://github.com/user-attachments/assets/135fb17c-d072-430b-a77c-301cf2bf8a90)
+
+_Ref 5. Using .split() to convert ip_addresses from a string to a list_
+
+By default, **.split() **splits the text by whitespace into list elements. In this algorithm, **.split()** takes the data stored as a string of IP addresses in **ip_addresses** and converts it into a list. I reassigned this list back to the variable **ip_addresses** and printed the variable to check my work:
+
+![image](https://github.com/user-attachments/assets/5ff6f690-e474-48d2-a875-1a7298be3645)
+
+_Ref 6. Output of .split()_
+
+
 
 ### Step Four
 
