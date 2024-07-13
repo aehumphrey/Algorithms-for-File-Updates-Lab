@@ -70,13 +70,25 @@ _Ref 6. Output of .split()_
 
 ### Step Four
 
-Description: Iterate through the remove list
+Description: Iterate through the remove list and remove IP addresses that are on the remove list
+
+This algorithm relies on a **for** loop that iterates through the IP addresses that are elements in the remove_list. The overall purpose of the for loop in an algorithm like this is to apply specific code statements to all elements of a sequence (i.e., IP addresses).
+
+My algorithm removes IP addresses from the allow list, **ip_addresses**, that are present in the **remove_list**. I was able to accomplish this because there were no duplicates in ip_addresses.
+
+First, I created a conditional to evaluate whether the variable **element** (i.e., an IP address) was found in the allow list (**ip_addresses**). If the element was present, I applied **.remove() **so that each IP address within the **remove_list** would be removed from **ip_addresses**:
+
+![image](https://github.com/user-attachments/assets/fb8f291f-a35b-4e50-8de4-d267d4a0a45f)
+
+_Ref 7. Using a for loop to remove items from ip_addresses_
+
+The results after .remove() are below:
+
+![image](https://github.com/user-attachments/assets/2dff7cfc-ae42-4eae-aebc-cee3763bdf19)
+
+_Ref 8. The updated allow list. Compare to Ref 6._
 
 ### Step Five
-
-Description: Remove IP addresses that are on the remove list
-
-### Step Six
 
 Description: Update the file with the revised list of IP addresses 
 
