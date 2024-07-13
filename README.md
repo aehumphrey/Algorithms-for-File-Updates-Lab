@@ -2,7 +2,7 @@
 
 ## Objective
 
-In this scenario, access to restricted content is controlled via IP address. The “allow_list.txt” file contains these IP addresses. A separate remove list identifies IP addresses that should no longer have authorization. I created an algorithm in Python to automate updating the “allow_list.txt file.”
+In this scenario, access to restricted content is controlled via IP address. The **“allow_list.txt”** file contains these IP addresses. A separate remove list identifies IP addresses that should no longer have authorization. I created an algorithm in Python to automate updating the **“allow_list.txt"** file.
 
 ### Skills Learned
 
@@ -92,7 +92,7 @@ _Ref 8. The updated allow list. Compare to Ref 6._
 
 Description: Update the file with the revised list of IP addresses 
 
-Finally, I needed to update the allow list file with the revised list. First, I converted the list back into a string using .join(). I used this method so that I could then use the output of .join() as an argument in .write() when writing to the file “allow_list.txt.” The string “\n” in the code instructs Python to place each element on a new line. This is useful for readability purposes and if, in the future, I want to convert the string into a list again.
+Finally, I needed to update the allow list file with the revised list. First, I converted the list back into a string using **.join()**. I used this method so that I could then use the output of **.join()** as an argument in **.write()** when writing to the file “**allow_list.txt**.” The string **“\n”** in the code instructs Python to place each element on a new line. This is useful for readability purposes and if, in the future, I want to convert the string into a list again.
 
 Then, using another with statement, I used .write() to update the file:
 
@@ -100,7 +100,7 @@ Then, using another with statement, I used .write() to update the file:
 
 _Ref 9. Updating the file using .write()_
 
-Rather than using “r” as a second argument, I used “w” to indicate I want to open the file to write over the contents. I then called the .write() function to write the allow list as a string to the file “allow_list.txt”. In order to rewrite the file, I appended .write() to the object file that is identified in the with statement. I passed in ip_addresses as the argument to specify that the contents of allow_list.txt should be updated with the data in this variable.
+Rather than using **“r” **as a second argument, I used **“w” **to indicate I want to open the file to write over the contents. I then called the **.write()** function to write the allow list as a string to the file **“allow_list.txt”**. In order to rewrite the file, I appended **.write()** to the object file that is identified in the with statement. I passed in ip_addresses as the argument to specify that the contents of allow_list.txt should be updated with the data in this variable.
 
 Below is the completed version of my algorithm:
 
@@ -108,6 +108,11 @@ Below is the completed version of my algorithm:
 ![image](https://github.com/user-attachments/assets/a139fa62-25b8-49a5-a2c5-c895b8935938)
 
 _Ref 10. Complete file updating algorithm_
+
+## Summary
+
+I created an algorithm (**update_file**) to remove IP addresses identified in the **remove_list** from the **“allow_list.txt”** file. To do this, I opened the file, converted it to a string, and converted the string to a list stored as **ip_addresses**. I then iterated through the IP addresses in **ip_addresses** using a **for** loop to evaluate if the element was part of the **remove_list **list. If it was, I applied the **.remove()** method to remove the element from **ip_addresses**. After this, I used **.join()** to convert **ip_addresses** back into a string and use this string to write over the contents of **allow_list.txt** with the revised list of allowed IP addresses.
+
 
 
 
